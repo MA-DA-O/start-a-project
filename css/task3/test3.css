@@ -9,13 +9,15 @@ html,body{padding:0;margin: 0;height: 100%;background-color: lightseagreen;}
 	padding-top: 2rem;
 }
 .imgtop{
-	padding-left:40rem;padding-right:40rem;padding-top: 20rem;
+	padding-left:40rem;padding-right:40rem;padding-top: 20rem;text-align: center;
 }
 .content{
 	text-align: center;padding-left:8rem;padding-right: 8rem;
 	}
 .imgleft{
-	display: inline-block; margin-left: 10rem; text-align: center;color: white;
+	 display:inline-block;  text-align: center; color: white; margin-left: 10rem;margin-top: 20rem;
 }
 .imgright{
-	display: inline-block; margin-left: 55rem; text-align: center;margin-top: 30rem;color: white;
+	
+	display: inline-block; text-align: center; color: white; margin-left: 55rem;
+}
