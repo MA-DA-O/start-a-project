@@ -9,22 +9,22 @@ html {
 }
 
 .head{
-    height: 9rem; 
+    height: 4.4rem; 
     width: 100%;
     background-color: #5fc0cd;
     color: white;
 }
 .sigin{
     float: right;
-    padding-right: 1rem;
-    padding-top: 2rem;
-    font-size:3rem;
+    padding-right: 1.3rem;
+    padding-top: 1.5rem;
+    font-size:1.6rem;
 }
 
 .login{
-    padding-top: 2rem;
+    padding-top: 1.2rem;
     display: inline-block;
-    font-size:3rem;
+    font-size:1.8rem;
     width: 6rem;
     height: 6rem;
     text-align: center;
@@ -35,62 +35,61 @@ html {
 .close{
    
    float: left;
-   padding-top: 2rem;
-   padding-left: 1rem;
-   font-size:3rem;
+   padding-top: 1.3rem;
+   padding-left: 1.5rem;
+   font-size:1.6rem;
 }
 
 .wrap{
-    background-color: white;margin-top: 0.2rem;margin-top: 1.5rem;
+    background-color: white;margin-top: 0.8rem;height: 0.5;
 }
 
 .phone{
     display: inline-block;
     background-color: white;
-    width: 8rem;height: 10rem;
+    width: 5.8rem;height: 5rem;
     background-image: url(../img/iphone.png);
-    background-position:2.5rem 2.5rem;
-    background-size: 2.8rem 4.5rem;
+    background-position: 2.15rem 1.5rem;
+    background-size: 1.4rem 2.25rem;
     background-repeat: no-repeat;
 }
 .inputnumber {
-    margin-top: 2.1rem;
+    margin-top: 1.05rem;
     border-top: 0;
     border-bottom: 0;
     border-right: 0;
     border-color: #e7e7e7;
     padding-left: 3rem;
     width: 55%;
-    height: 5rem;
+    height: 2.5rem;
     background-color: white;
     vertical-align: top;
     outline:medium;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     color:black ;
 }
 .block {
     display: inline-block;
     background-color: white;
-    width: 8rem;
-    height: 10rem;
+    width: 5.8rem;height: 5rem;
     background-image: url(../img/locked\ 2.png);
-    background-size:3rem 4.5rem;
-    background-position: 2.5rem 2.5rem;
+    background-size:1.5rem 2.25rem;
+    background-position:  2.15rem 1.5rem;
     background-repeat:no-repeat;
 }
 .inputpassword{
-    margin-top: 2.1rem;
+    margin-top: 1.15rem;
     border-top: 0;
     border-bottom: 0;
     border-right: 0;
     border-color:#e7e7e7;
-    padding-left: 3rem;
+    padding-left: 1.5rem;
     width: 55%;
-    height: 5rem;
+    height: 2.5rem;
     background-color: white;
     vertical-align: top;
     outline:medium;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     color:black;
 }
 
@@ -98,10 +97,10 @@ html {
 .button{
     width: 100%;
     border: 0;
-    margin-top: 1.5rem;
-    height: 9rem;
+    margin-top: 1.75rem;
+    height: 5rem;
     background-color:#5fc0cd ;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: white;
 }
 .button-password{
@@ -110,7 +109,7 @@ html {
     margin-top: 1.5rem;
     margin-right: 1.5rem;
     border: 0;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color:#5fc0cd;
     background-color: #eff0f4;
     outline: none;
