@@ -113,6 +113,7 @@ html{font-size: 62.5%;}
     width: 1.8rem;
     height: 1.8rem;
     vertical-align: text-bottom;
+    margin-top: 0.2rem;
 }
 .startext{
     display: inline-block;
@@ -153,7 +154,7 @@ html{font-size: 62.5%;}
     display:inline-block;
     font-size: 1.6rem;
     padding-left:1rem;
-    margin-top: 1.6rem;
+    margin-top: 1.7rem;
     margin-bottom: 1.2rem;
 }
 
