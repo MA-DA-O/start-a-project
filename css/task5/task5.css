@@ -105,6 +105,7 @@ html{font-size: 62.5%;}
     margin-bottom: 1.2rem; 
     font-size: 1.6rem;
     font-weight: 600;
+    border-right: 0.1rem solid #e7e7e7;
 }
 .not-border{
     border-right: none;
