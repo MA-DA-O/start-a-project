@@ -251,7 +251,7 @@ footer {
     width: 100%;
     align-items: center;
     background-color: #f8fafb;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .footer-blank {
@@ -262,7 +262,7 @@ footer {
 .homepage {
     height: 4.25rem;
     width: 3rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
     border: 0;
     padding: 0;
     outline: none;
@@ -280,7 +280,7 @@ footer {
 .my {
     height: 4.25rem;
     width: 3rem;
-    margin-right: 2rem;
+    margin-right: 3rem;
     border: 0;
     padding: 0;
     outline: none;
