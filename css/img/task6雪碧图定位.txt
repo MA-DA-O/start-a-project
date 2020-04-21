@@ -1,0 +1,7 @@
+.img{background:url(../images/img.png)  no-repeat;}
+.task6-定位图标{height:23px;width:19px;background-position:0 0;}
+.task6-挂历图标{height:24px;width:24px;background-position:-19px 0;}
+.task6-人像{height:41px;width:42px;background-position:-43px 0;}
+.task6定位地图{height:44px;width:42px;background-position:-85px 0;}
+.task6-首页图{height:40px;width:46px;background-position:-127px 0;}
+.task6图标{height:94px;width:94px;background-position:-173px 0;}
