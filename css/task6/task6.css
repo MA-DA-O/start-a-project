@@ -59,6 +59,7 @@ html, body {
     position: fixed;
     top: 2%;
     right: 2%;
+    height: 2.2rem;
     margin: 0rem;
     padding: 0rem;
     border: 0;
@@ -99,7 +100,18 @@ html, body {
     z-index: 0;
     font-size: 1.4rem;
     width: 33%;
+    min-width: 0;
     background-color: #f8fafb
+}
+
+ul {
+  
+}
+
+li {  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+ 
 }
 
 .border-not {
@@ -126,7 +138,7 @@ span {
     margin-right: 0.5rem;
     height: 1.1rem;
     width: 0.9rem;
-    background-position: -6.73px 0;
+    background-position: -6px 0;
 }
 
 .calendar {
@@ -226,6 +238,7 @@ span {
 .red-right {
     position: relative;
     top: 0.2rem;
+    z-index: -1;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     font-size: 2.8rem;
