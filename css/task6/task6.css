@@ -104,7 +104,9 @@ html, body {
     background-color: #f8fafb
 }
 
-
+.border {
+    border-top: 0.1rem solid #ff9999;
+}
 
 li {
     white-space: nowrap;
@@ -121,7 +123,7 @@ span {
     display: inline-block;
     background-image: url(../img/task6雪碧.png);
     background-repeat: no-repeat;
-    background-size: 140px 47px;
+    background-size: 47px 133px;
 }
 
 .pulldown {
@@ -134,43 +136,43 @@ span {
 .locaition {
     margin-left: 1.1rem;
     margin-right: 0.5rem;
-    height: 1.1rem;
-    width: 0.9rem;
-    background-position: -6px 0;
+    height: 11px;
+    width: 10px;
+    background-position: 0 0;
 }
 
 .calendar {
+    margin-left: 1rem;
     margin-right: 0.5rem;
-    margin-left: 1.2rem;
     height: 12px;
     width: 12px;
-    background-position: -16px 0;
+    background-position: 0 -11px;
 }
 
 .map {
     height: 22px;
     width: 21px;
-    background-position: -28px 0;
+    background-position: 0 -44px;
     background-color: #5fc0cd;
 }
 
 .home {
     height: 20px;
     width: 23px;
-    background-position: -70px 0;
+    background-position: 0 -66px;
 }
 
 .big {
     height: 47px;
     width: 47px;
-    background-position: -93px 0;
+    background-position: 0 -86px;
 }
 
 .man {
     display: inline-block;
     height: 20px;
     width: 21px;
-    background-position: -49px 0;
+    background-position: 0 -23px;
 }
 
 .line {
@@ -233,14 +235,12 @@ span {
     margin: 0;
 }
 
-.red-right {
-    position: relative;
-    top: 0.2rem;
-    z-index: -1;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    font-size: 2.8rem;
-    color: #5fc0cd;
+.icon {
+    padding: 0.5rem;
+    margin: 0;
+    border-top: 0.1rem solid #5fc0cd;
+    border-right: 0.1rem solid #5fc0cd;
+    transform: rotate(45deg); margin-right: 1rem;
 }
 
 .line-left {
