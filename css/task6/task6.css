@@ -104,14 +104,12 @@ html, body {
     background-color: #f8fafb
 }
 
-ul {
-  
-}
 
-li {  white-space: nowrap;
+
+li {
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
- 
 }
 
 .border-not {
@@ -272,13 +270,13 @@ footer {
     height: 5rem;
 }
 
+.foot-text {
+    margin: 0;
+}
+
 .homepage {
-    height: 4.25rem;
-    width: 3rem;
     margin-left: 3rem;
     border: 0;
-    padding: 0;
-    outline: none;
     background-color: #f8fafb;
 }
 
@@ -291,14 +289,9 @@ footer {
 }
 
 .my {
-    height: 4.25rem;
-    width: 3rem;
     margin-right: 3rem;
     border: 0;
-    padding: 0;
-    outline: none;
     background-color: #f8fafb;
-    align-items: center;
 }
 
 .text {
