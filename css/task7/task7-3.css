@@ -26,6 +26,9 @@ header {
     color: #ffffff;
 }
 
+.button-home{
+    border: 0;
+}
 span {
     background: url(../img/task7/task7-3.png) no-repeat;
     background-size: 25px 41px;
