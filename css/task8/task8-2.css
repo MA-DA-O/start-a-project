@@ -337,8 +337,16 @@ a:hover {
     margin-right: 25px;
     min-width: 342px;
 }
-
-
+@media screen and (max-width:768px) {
+    .main-man-wrap{
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width:425px){
+    .main-man-wrap{
+        margin: auto;
+    }
+}
 main p {
     display: inline-block;
 }
@@ -453,6 +461,7 @@ main p {
     margin-top: 30px;
     padding: 0;
     margin: auto;
+    margin-top:50px;
     background-color: #26a26f;
 }
 
