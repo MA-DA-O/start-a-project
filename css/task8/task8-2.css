@@ -61,10 +61,10 @@ span {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         color: white;
         height: 1rem;
-        width: 3.5rem;
+        width: 12rem;
         margin-top: 10px;
         margin-bottom: 0;
     }
@@ -72,7 +72,7 @@ span {
         border: none;
     }
     a:hover {
-        border-bottom: none;
+        border: none;
     }
 }
 
@@ -86,10 +86,10 @@ span {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1rem;
+        font-size: 2rem;
         color: white;
         height: 1rem;
-        width: 3.5rem;
+        width: 7.5rem;
         margin-top: 10px;
         margin-bottom: 0;
     }
@@ -100,8 +100,8 @@ span {
 .bg-color{
     background-color: #29b078
 }
-.navbar-collapse {
-    flex-direction: row-reverse;
+.navbar-nav {
+    align-items: center;
 }
 
 a {
@@ -128,7 +128,10 @@ a:hover {
     justify-content: space-between;
     padding: 0;
 }
+.navbar-collapse {
 
+    flex-direction: row-reverse;
+}
 .h-icon {
     padding: 0;
     display: flex;
@@ -334,7 +337,7 @@ a:hover {
 .main-man-wrap {
     width: 30%;
     padding-left: 0;
-    margin-right: 25px;
+    margin-right: 2%;
     min-width: 342px;
 }
 @media screen and (max-width:768px) {

@@ -1,64 +1,100 @@
-html,body{background-color: #fafafa;
+html, body {
+    background-color: #fafafa;
     font-size: 62.5%
 }
 
-span{
+span {
     display: inline-block;
-    background:url(../img/task8/task8-3.png)  no-repeat;
+    background: url(../img/task8/task8-3.png) no-repeat;
 }
-.icon-1{
-    height:24px;width:25px;background-position:0 0;/*企鹅图标*/
+
+.icon-1 {
+    height: 24px;
+    width: 25px;
+    background-position: 0 0;
+    /*企鹅图标*/
 }
-.icon-2{
-    height:24px;width:25px;background-position:0 -34px;/*微博*/
+
+.icon-2 {
+    height: 24px;
+    width: 25px;
+    background-position: 0 -34px;
+    /*微博*/
 }
-.icon-3{
-    height:24px;width:25px;background-position:0 -73px;/*微信图标*/
+
+.icon-3 {
+    height: 24px;
+    width: 25px;
+    background-position: 0 -73px;
+    /*微信图标*/
 }
-.icon-4{
+
+.icon-4 {
     margin-left: 28rem;
-    height:92px;width:92px;background-position:0 -119px;/*二维码*/
+    height: 92px;
+    width: 92px;
+    background-position: 0 -119px;
+    /*二维码*/
 }
-@media screen and (max-width:768px){
-    .icon-4{
+
+@media screen and (max-width:768px) {
+    .icon-4 {
         margin-left: 0;
     }
 }
-.icon-5{
-    height:49px;width:107px;background-position:0 -230px;/*技能树*/
+
+.icon-5 {
+    height: 49px;
+    width: 107px;
+    background-position: 0 -230px;
+    /*技能树*/
 }
-.icon-6{
+
+.icon-6 {
     float: left;
-    height:150px;width:210px;background-position:0 -296px;/*土豆网*/
+    height: 150px;
+    width: 210px;
+    background-position: 0 -296px;
+    /*土豆网*/
 }
-@media screen and (max-width:768px){
-    .icon-6{
+
+@media screen and (max-width:768px) {
+    .icon-6 {
         float: none;
         margin: auto;
     }
-    
 }
-.icon-7{
-    height:248px;width:1920px;background-position:0 -487px;/*长背景图*/
+
+.icon-7 {
+    height: 248px;
+    width: 1920px;
+    background-position: 0 -487px;
+    /*长背景图*/
 }
-.h-p{
+
+.h-p {
     height: 8rem;
     display: flex;
     align-items: center;
 }
 
-.main-t-p-1{
+.main-t-p-1 {
     margin: 0;
-    font-size: 1.6rem;color: black;
+    font-size: 1.6rem;
+    color: black;
 }
-.main-t-p-2{
+
+.main-t-p-2 {
     margin: 0;
-    font-size: 1.6rem;color: #29b078;
+    font-size: 1.6rem;
+    color: #29b078;
 }
-.box-blank{
+
+.box-blank {
     width: 10.7rem;
     height: 4.9rem;
 }
+
 .h-t {
     display: flex;
     align-items: center;
@@ -108,10 +144,10 @@ span{
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         color: white;
         height: 1rem;
-        width: 3.5rem;
+        width: 12rem;
         margin-top: 10px;
         margin-bottom: 0;
     }
@@ -119,7 +155,7 @@ span{
         border: none;
     }
     a:hover {
-        border-bottom: none;
+        border: none;
     }
 }
 
@@ -133,22 +169,24 @@ span{
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1rem;
+        font-size: 2rem;
         color: white;
         height: 1rem;
-        width: 3.5rem;
+        width: 7.5rem;
         margin-top: 10px;
         margin-bottom: 0;
     }
     a:hover {
-        border-bottom: none;
+        border: none!important;
     }
 }
-.bg-color{
+
+.bg-color {
     background-color: #29b078
 }
-.navbar-collapse {
-    flex-direction: row-reverse;
+
+.navbar-nav {
+    align-items: center;
 }
 
 a {
@@ -182,16 +220,15 @@ a:hover {
     align-items: center;
 }
 
-.main-background-wrap{
+.main-background-wrap {
     width: 100%;
 }
-.main-background{
-    
+
+.main-background {
     width: 100%;
-    
-    
 }
-.main-left-hd{
+
+.main-left-hd {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -205,20 +242,25 @@ a:hover {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-@media screen and (max-width:768px){
-    .main-left-hd {font-size: 1rem;}
+
+@media screen and (max-width:768px) {
+    .main-left-hd {
+        font-size: 1rem;
+    }
 }
 
-.main-left-hd p{
+.main-left-hd p {
     margin: 0;
 }
-.main-righr{
+
+.main-righr {
     padding: 0;
     background-color: white;
     width: 75%;
     margin-bottom: 10rem;
 }
-.main-roundness-warp{
+
+.main-roundness-warp {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,7 +271,24 @@ a:hover {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.main-row-roundness-wrap{
+@media screen and (max-width:510px){
+    .main-roundness-warp{
+        flex-flow: column wrap;
+        height: 230px;
+    }
+    .col-3{
+        flex: none;
+    max-width: none;
+        width: 90%;
+        margin: auto;
+        padding:0;
+    }
+    .main-righr{
+        width: 90%;
+        margin: auto;
+    }
+}
+.main-row-roundness-wrap {
     display: inline-flex;
     align-items: center;
     width: 9rem;
@@ -237,27 +296,31 @@ a:hover {
     margin-top: 4rem;
     justify-content: space-between;
 }
-@media screen and (max-width:768px){
-   
-.main-row-roundness-wrap {
-    margin-left: 0rem;
-    margin-top: 0rem;
+
+@media screen and (max-width:768px) {
+    .main-row-roundness-wrap {
+        margin-left: 0rem;
+        margin-top: 0rem;
+    }
 }
-}
+
 .main-row-roundness-wrap:hover .roundness {
     background-color: #f9a372;
 }
-.main-row-roundness-wrap:hover p{
+
+.main-row-roundness-wrap:hover p {
     color: #f9a372;
 }
-@media screen and (max-width:425px){
-    .main-row-roundness-wrap{
+
+@media screen and (max-width:425px) {
+    .main-row-roundness-wrap {
         width: 6rem;
         margin-left: 0;
         margin-top: 2rem;
     }
 }
-.roundness{
+
+.roundness {
     display: inline-block;
     width: 8px;
     height: 8px;
@@ -265,44 +328,46 @@ a:hover {
     background-color: white;
     border: .1rem solid #ff7527;
 }
-.main-roundness-warp p{
+
+.main-roundness-warp p {
     display: inline-block;
     width: 7rem;
     font-weight: 600;
     font-size: 1.4rem;
     color: #29b078;
     margin: 0;
-    
 }
-@media screen and (max-width:768px){
-    .main-roundness-warp p{
-        font-size: 1rem;
 
+@media screen and (max-width:768px) {
+    .main-roundness-warp p {
+        font-size: 1rem;
     }
-    .main-row-roundness-wrap{
+    .main-row-roundness-wrap {
         margin-left: 2rem;
-    margin-top: 3rem;
+        margin-top: 3rem;
     }
 }
-.main-row-roundness-wrap-marginbottom{
+
+.main-row-roundness-wrap-marginbottom {
     margin-bottom: 3rem;
 }
-.main-right-top{
-   
+
+.main-right-top {
     width: 100%;
     background-color: #ffffff;
-    
     border: 0.1rem solid #e6e6e6;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     box-shadow: 0 0 2px #e6e6e6;
 }
-@media screen and (max-width:768px){
-    .main-right-top{
+
+@media screen and (max-width:768px) {
+    .main-right-top {
         text-align: center;
     }
 }
-.main-right-t-p{
+
+.main-right-t-p {
     margin-left: 10px;
     line-height: 3rem;
     margin-right: 20px;
@@ -310,7 +375,8 @@ a:hover {
     font-size: 1.4rem;
     color: #999999;
 }
-.main-right-b-p{
+
+.main-right-b-p {
     display: inline-block;
     line-height: 3rem;
     margin-top: 2.2rem;
@@ -319,7 +385,8 @@ a:hover {
     margin-left: 15px;
     margin-right: 15px;
 }
-.main-right-bottom{
+
+.main-right-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,15 +398,16 @@ a:hover {
     box-shadow: 0 0 2px #e6e6e6;
     border-top: 0;
 }
-.main-right-b-p-margin-b{
+
+.main-right-b-p-margin-b {
     margin-bottom: 8rem;
 }
 
-
-
 .footer-bottom {
+    margin-top: 30px;
     padding: 0;
     margin: auto;
+    margin-top: 50px;
     background-color: #26a26f;
 }
 
@@ -377,23 +445,30 @@ a:hover {
     font-size: 1rem;
     color: #ffffff;
 }
-.footer-bottom .col{
-    padding: 0;
-}
-.footer-bottom .container{
-    padding: 0;
-}
-@media screen and (max-width:768px){
-    .footer-btm-margin{
-        margin-left: 0;
-    }
-    .icon-4{
-        margin-left: 0;
-    }
 
+.footer-bottom .col {
+    padding: 0;
 }
-@media screen and (max-width:768px){
-    .row .col{
-        padding:0;
+
+.footer-bottom .container {
+    padding: 0;
+}
+
+@media screen and (max-width:768px) {
+    .footer-btm-margin {
+        margin-left: 0;
     }
+    .icon-5 {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .row .col {
+        padding: 0;
+        min-width: 151px;
+    }
+}
+.footer-bottom:hover a{
+    color: orange;
 }

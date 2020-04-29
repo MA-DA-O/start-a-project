@@ -152,10 +152,10 @@ span {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         color: white;
         height: 1rem;
-        width: 3.5rem;
+        width: 12rem;
         margin-top: 10px;
         margin-bottom: 0;
     }
@@ -247,15 +247,14 @@ a:hover {
 }
 
 @media screen and (max-width:768px) {
-    .row-greed-icon-wrap {
-        display: flex;
-        flex-direction: column;
-    }
+    
     .row-greed-icon {
         width: 100%;
+        min-width: 250px
     }
     .row-man-icon {
         border-style: none!important;
+        min-width: 270px;;
     }
 }
 
@@ -320,7 +319,7 @@ a:hover {
 
 @media screen and (max-width:768px) {
     .row-roundness {
-        justify-content: center;
+        justify-content: space-around;
     }
     .row-none {
         visibility: visible;
@@ -340,17 +339,26 @@ a:hover {
         margin-right: 5rem;
         margin-bottom: 60px;
     }
+    .row-none {
+        visibility: visible;
+    }
 }
 
 @media screen and (min-width:1024px) and (max-width:1200px) {
     .row-roundness {
         margin-left: 10rem;
     }
+    .row-none {
+        visibility: visible;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
     .row-roundness {
         margin-left: 5rem;
+    }
+    .row-none {
+        visibility: visible;
     }
 }
 
@@ -363,6 +371,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     margin-right: 3rem;
+    margin-top: 2rem;
     background-color: #ffffff;
     border: .1rem solid #eeeded;
 }
@@ -507,16 +516,19 @@ a:hover {
     margin: 0;
     padding: 0;
     width: 100%;
-    flex-wrap: wrap;
+    
+    height: 60px;
+    flex-flow: column wrap;
 }
 .footer-top-roundness-wrap{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 57px;
-    margin: 5px;
+   
+    justify-content: space-around;
+    width: 75px;
+    list-style: none;
+  
     padding-bottom: 2px;
-    font-size: 1rem;
+   
     color: #999999;
     border-bottom: .1rem solid;
     border-color: transparent;
@@ -563,10 +575,22 @@ a:hover {
     font-size: 1rem;
     color: #a9a9a9;
 }
-
+@media screen and (max-width:768px){
+    .footer-bottom .col{
+    padding: 0;
+    min-width: 163px;
+    flex-grow: none;
+    max-width: none;
+    }
+}
+@media screen and (max-width:520px){
+    .footer-bottom .col{
+        min-width: 164px;
+    }
+}
 @media screen and (min-width:481px) and (max-width:768px) {
     .footer-top-roundness-wrap {
-        margin-left: 28px;
+       
     }
         
     }
@@ -586,7 +610,18 @@ a:hover {
     }
         
 }
-
+@media screen and (max-width:600px){
+    .footer-top-text-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        height: 120px;}
+}
 
 
 
@@ -629,7 +664,7 @@ a:hover {
     font-size: 1rem;
     color: #ffffff;
 }
-@media screen and (max-width:495px){
+@media screen and (max-width:522px){
     .foot-icon{
         margin-left: 0;
     }
