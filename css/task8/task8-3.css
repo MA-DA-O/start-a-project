@@ -29,12 +29,14 @@ span{
 }
 .icon-6{
     float: left;
-    height:150px;width:240px;background-position:0 -296px;/*土豆网*/
+    height:150px;width:210px;background-position:0 -296px;/*土豆网*/
 }
 @media screen and (max-width:768px){
     .icon-6{
         float: none;
+        margin: auto;
     }
+    
 }
 .icon-7{
     height:248px;width:1920px;background-position:0 -487px;/*长背景图*/
@@ -235,6 +237,13 @@ a:hover {
     margin-top: 4rem;
     justify-content: space-between;
 }
+@media screen and (max-width:768px){
+   
+.main-row-roundness-wrap {
+    margin-left: 0rem;
+    margin-top: 0rem;
+}
+}
 .main-row-roundness-wrap:hover .roundness {
     background-color: #f9a372;
 }
@@ -250,8 +259,8 @@ a:hover {
 }
 .roundness{
     display: inline-block;
-    width: 1vw;
-    height: 1vw;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: white;
     border: .1rem solid #ff7527;
@@ -264,6 +273,16 @@ a:hover {
     color: #29b078;
     margin: 0;
     
+}
+@media screen and (max-width:768px){
+    .main-roundness-warp p{
+        font-size: 1rem;
+
+    }
+    .main-row-roundness-wrap{
+        margin-left: 2rem;
+    margin-top: 3rem;
+    }
 }
 .main-row-roundness-wrap-marginbottom{
     margin-bottom: 3rem;
@@ -278,10 +297,15 @@ a:hover {
     border-top-right-radius: 5px;
     box-shadow: 0 0 2px #e6e6e6;
 }
+@media screen and (max-width:768px){
+    .main-right-top{
+        text-align: center;
+    }
+}
 .main-right-t-p{
-   
+    margin-left: 10px;
     line-height: 3rem;
-  
+    margin-right: 20px;
     margin-top: 2.2rem;
     font-size: 1.4rem;
     color: #999999;
@@ -292,6 +316,8 @@ a:hover {
     margin-top: 2.2rem;
     font-size: 1.4rem;
     color: #999999;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .main-right-bottom{
     display: flex;
@@ -299,6 +325,8 @@ a:hover {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     border: 1px solid #e6e6e6;
     box-shadow: 0 0 2px #e6e6e6;
     border-top: 0;
@@ -340,11 +368,7 @@ a:hover {
 .footer-btm-margin {
     margin-left: 30rem;
 }
-@media screen and (max-width:768px){
-    .footer-btm-margin{
-        margin-left: 0;
-    }
-}
+
 .footer-btm-border {
     display: flex;
     align-items: center;
@@ -358,4 +382,18 @@ a:hover {
 }
 .footer-bottom .container{
     padding: 0;
+}
+@media screen and (max-width:768px){
+    .footer-btm-margin{
+        margin-left: 0;
+    }
+    .icon-4{
+        margin-left: 0;
+    }
+
+}
+@media screen and (max-width:768px){
+    .row .col{
+        padding:0;
+    }
 }

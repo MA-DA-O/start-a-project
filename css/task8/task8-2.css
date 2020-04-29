@@ -192,6 +192,7 @@ a:hover {
 /*人像图*/
 
     {
+        margin: 5px;
     height: 139px;
     width: 139px;
     background-position: 0 -228px;
@@ -208,12 +209,15 @@ a:hover {
 }
 
 .main-t-p-2 {
+    
     margin: 0;
     font-size: 1.6rem;
     color: #29b078;
 }
 
 .main-t-p-3 {
+    
+    margin: 0;
     font-size: 1.4rem;
     color: #afafaf
 }
@@ -226,6 +230,7 @@ a:hover {
 }
 
 .main-t-p-5 {
+    margin: 0;
     font-size: 1.4rem;
 }
 @media screen and (max-width:768px){
@@ -246,7 +251,9 @@ a:hover {
     font-weight: 700;
     height: 8rem;
 }
-
+.main-t-p-6-margin{
+    margin: 0;
+}
 .row-blank{
     width: 50%;
 }
@@ -286,7 +293,34 @@ a:hover {
     border-bottom: .1rem solid #edf1f2;
 }
 
+
+
 /*浅色*/
+.main-top-text-wrap{
+
+
+}
+.main-top-text-margin{
+    margin-left: 40px;
+}
+.main-top-text-wrap:hover .main-t-p-3 {
+    background-color: #32c086;
+    color: #ffffff;
+
+}
+.main-top-text-wrap:hover .main-t-p-5{
+    background-color: #32c086;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
 
 .main-border-color-1 .col, .col-2 {
     padding: 0;
@@ -296,23 +330,27 @@ a:hover {
     padding: 0;
 }
 
-.main-man-left-padding {
+
+.main-man-wrap {
+    width: 30%;
     padding-left: 0;
+    margin-right: 25px;
+    min-width: 342px;
 }
 
-.main-man-right-padding {
-    padding-right: 0;
-}
 
 main p {
     display: inline-block;
 }
 
 .main-man-border {
+    position: relative;
     margin-top: 5rem;
     border: 0.1rem solid #edf1f2;
 }
-
+.main-man-right{
+    width: 50%;
+}
 .main-man-p-1 {
     font-weight: 700;
     font-size: 1.4rem;
@@ -321,12 +359,13 @@ main p {
 }
 
 .main-man-p-2 {
+    word-break: break-all;
     font-size: 1.4rem;
     margin: 0;
 }
 
 .main-man-p-3 {
-    margin-right: .5rem;
+    padding: 5px;
     font-size: 1.2rem;
     color: #bfbfbf;
     margin: 0;
@@ -346,7 +385,7 @@ main p {
 
 .main-man-box-1 {
     display: inline-flex;
-    height: 17.5rem;
+    flex-wrap: wrap;
     border-bottom: .1rem solid #edf1f2;
 }
 
@@ -390,8 +429,8 @@ main p {
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .main-man-box-3-wrap {
@@ -411,6 +450,7 @@ main p {
 }
 
 .footer-bottom {
+    margin-top: 30px;
     padding: 0;
     margin: auto;
     background-color: #26a26f;
@@ -463,13 +503,17 @@ main p {
     display: none;
     font-size: 1.5rem;
     color: antiquewhite;
-    width: 100%;
+   
     align-items: center;
-    height: 44rem;
+    height: 100%;
+    width: 100%;
     background-color: black;
-    opacity: 0.9;
+    opacity: 0.7;
 }
-
+.hidden-p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .main-man-border:hover .hidden {
     display: inline-flex;
     z-index: 3;
