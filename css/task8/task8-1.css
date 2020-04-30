@@ -66,9 +66,9 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
+    
     height: 3rem;
-    margin-top: 0;
+   
 }
 
 .h-icon {
@@ -247,14 +247,14 @@ a:hover {
 }
 
 @media screen and (max-width:768px) {
-    
     .row-greed-icon {
         width: 100%;
         min-width: 250px
     }
     .row-man-icon {
         border-style: none!important;
-        min-width: 270px;;
+        min-width: 270px;
+        ;
     }
 }
 
@@ -363,28 +363,28 @@ a:hover {
 }
 
 .row-head-wrap {
-    display: flex;
+    padding: 30px 10px;
+
 }
 
 .row-head {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 3rem;
-    margin-top: 2rem;
+    padding: 10px 10px;
+    margin: auto;
     background-color: #ffffff;
     border: .1rem solid #eeeded;
+    
+    max-width: 90%;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:576px) {
     .row-head-wrap {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+       width: 100%;
+       flex-basis: 500px;
     }
-    .row-head {
-        width: 100%;
-    }
+    
 }
 
 .man-icon-1 {
@@ -481,6 +481,8 @@ a:hover {
     margin-bottom: 5rem;
     padding: 0;
     border: .1rem solid transparent;
+    margin: auto;
+    max-width: 90%;
 }
 
 .icon-wrap {
@@ -509,50 +511,44 @@ a:hover {
     margin: auto;
     padding-bottom: 2.5rem;
 }
-.footer-top-text-box{
+
+.footer-top-text-box {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
     width: 100%;
-    
     height: 60px;
     flex-flow: column wrap;
 }
-.footer-top-roundness-wrap{
+
+.footer-top-roundness-wrap {
     display: flex;
-   
-    justify-content: space-around;
     width: 75px;
     list-style: none;
-  
     padding-bottom: 2px;
-   
     color: #999999;
     border-bottom: .1rem solid;
     border-color: transparent;
 }
 
-
-.footer-top-roundness{
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: #999999;
+@media screen and (min-width:768px) {
+    .footer-top-text-box {
+        flex-flow: nowrap;
+    }
 }
-.footer-top-roundness-p{
+
+.footer-top-roundness-p {
     margin: 0;
     margin-left: 5px;
     color: #999999;
     font-size: 1rem;
-
 }
 
 .footer-top-roundness-wrap:hover {
     border-color: #32c086;
 }
-
 
 .footer-bottom {
     margin: auto;
@@ -560,7 +556,6 @@ a:hover {
 }
 
 .foot-icon {
-    margin-left: 9rem;
     height: 92px;
     width: 92px;
     background-position: 0 -280px;
@@ -570,47 +565,43 @@ a:hover {
     padding: 0;
 }
 
-
 .footer-top-text li {
     font-size: 1rem;
     color: #a9a9a9;
 }
-@media screen and (max-width:768px){
-    .footer-bottom .col{
-    padding: 0;
-    min-width: 163px;
-    flex-grow: none;
-    max-width: none;
+
+@media screen and (max-width:768px) {
+    .footer-bottom .col {
+        padding: 0;
+        min-width: 163px;
+        flex-grow: none;
+        max-width: none;
     }
 }
-@media screen and (max-width:520px){
-    .footer-bottom .col{
+
+@media screen and (max-width:520px) {
+    .footer-bottom .col {
         min-width: 164px;
     }
 }
-@media screen and (min-width:481px) and (max-width:768px) {
-    .footer-top-roundness-wrap {
-       
-    }
-        
-    }
 
+@media screen and (min-width:481px) and (max-width:768px) {
+    .footer-top-roundness-wrap {}
+}
 
 @media screen and (max-width:481px) and (min-width:430px) {
     .footer-top-roundness-wrap {
         width: 70px;
     }
-        
-    
 }
 
 @media screen and (max-width:365px) {
     .footer-top-roundness-wrap {
         margin-left: -4px;
     }
-        
 }
-@media screen and (max-width:600px){
+
+@media screen and (max-width:600px) {
     .footer-top-text-box {
         display: flex;
         align-items: center;
@@ -620,19 +611,9 @@ a:hover {
         flex-direction: column;
         width: 100%;
         flex-wrap: wrap;
-        height: 120px;}
+        height: 120px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .footer-bottom p {
     margin-top: 2rem;
@@ -652,8 +633,11 @@ a:hover {
     display: inline-block;
 }
 
-.footer-btm-margin {
-    margin-left: 9rem;
+.footer-icon-wrap {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-btm-border {
@@ -663,19 +647,20 @@ a:hover {
     border-top: 0.1rem solid #32c086;
     font-size: 1rem;
     color: #ffffff;
+    text-align: center;
 }
-@media screen and (max-width:522px){
-    .foot-icon{
-        margin-left: 0;
-    }
-    .footer-btm-margin{
-        margin-left: 0;
+
+@media screen and (max-width:520px) {
+    .footer-icon-wrap {
+        float: left;
     }
 }
+
 ul {
     padding-left: 5px;
     margin: 0;
 }
+
 li:hover {
     text-decoration: underline;
     color: #32c086;

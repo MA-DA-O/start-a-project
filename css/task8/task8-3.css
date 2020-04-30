@@ -1,6 +1,7 @@
 html, body {
     background-color: #fafafa;
-    font-size: 62.5%
+    font-size: 62.5%;
+    box-sizing: content-box;
 }
 
 span {
@@ -54,6 +55,7 @@ span {
     float: left;
     height: 150px;
     width: 210px;
+    border-top-left-radius: 5px;
     background-position: 0 -296px;
     /*土豆网*/
 }
@@ -71,7 +73,10 @@ span {
     background-position: 0 -487px;
     /*长背景图*/
 }
-
+.h-t-wrap {
+    width: 100%;
+    background-color: #ffffff;
+}
 .h-p {
     height: 8rem;
     display: flex;
@@ -99,7 +104,6 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
     height: 3rem;
     background-color: #ffffff;
 }
@@ -444,11 +448,9 @@ a:hover {
     border-top: 0.1rem solid #32c086;
     font-size: 1rem;
     color: #ffffff;
+    text-align: center;
 }
 
-.footer-bottom .col {
-    padding: 0;
-}
 
 .footer-bottom .container {
     padding: 0;
@@ -465,8 +467,8 @@ a:hover {
 
 @media screen and (max-width:768px) {
     .row .col {
-        padding: 0;
-        min-width: 151px;
+      
+        min-width: 160px;
     }
 }
 .footer-bottom:hover a{
