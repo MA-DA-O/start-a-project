@@ -296,7 +296,7 @@ a:hover {
     display: inline-flex;
     align-items: center;
     width: 9rem;
-    margin-left: 3rem;
+    margin-left: 1rem;
     margin-top: 4rem;
     justify-content: space-between;
 }
@@ -363,8 +363,15 @@ a:hover {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     box-shadow: 0 0 2px #e6e6e6;
+    overflow: auto;
 }
-
+.clearfix::after{
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    content: " ";
+}
 @media screen and (max-width:768px) {
     .main-right-top {
         text-align: center;

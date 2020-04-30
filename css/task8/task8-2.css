@@ -357,7 +357,6 @@ main p {
 }
 
 .main-man-p-3 {
-    padding: 5px;
     font-size: 1.2rem;
     color: #bfbfbf;
     margin: 0;
@@ -546,7 +545,7 @@ main p {
 }
 @media screen and (max-width: 520px){
 .footer-bottom .col {
-    min-width: 164px;}
+    min-width: 165px;}
 }
 @media screen and (max-width:768px) {
     .footer-btm-margin {
