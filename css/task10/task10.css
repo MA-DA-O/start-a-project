@@ -3,7 +3,9 @@ html, body {
   background-color: #ffffff;
   box-sizing: content-box;
 }
-
+button{
+  outline: none!important;
+}
 .h-t-bg-color {
   width: 100%;
   background-color: #1d7ad9;
@@ -200,6 +202,7 @@ i {
   font-size: 2.2rem;
   font-weight: 400;
   margin: 0;
+  margin-left: 5px;
 }
 
 .main-box-1 {
@@ -246,7 +249,7 @@ i {
 }
 
 .main-label {
-  margin: 14.5px 20px;
+  margin: 11.5px 20px;
   display: inline-block;
   font-size: 1.8rem;
   color: #666666;
@@ -394,10 +397,10 @@ select {
   color: #a0a0a0;
 }
 .footer-t-box1{
-
+width: auto;
 }
 .footer-t-box2{
-
+ width: auto;
 }
 .footer-t-box3{
   display: flex;
@@ -422,9 +425,13 @@ select {
   justify-content: center;
   text-align: center;
 }
+.footer-b-p p{
+  margin: 0;
+}
 @media screen and (max-width:1200px) {
 
 .main-label{
+    margin: 13.5px 20px;
   font-size: 1.5rem;
 }
 .footer-t-wrap-box-p-2{
@@ -433,6 +440,25 @@ select {
 
 }
 @media screen and (max-width:992px) {
+  .navbar-light .navbar-toggler{
+    margin-right: 15px;
+  }
+  .navbar-nav{
+    width: 100%;
+  }
+  .h-b-btn-wrap{
+    justify-content: center;
+  }
+  .h-b-btn{
+    margin-left: 0;
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+  }
+  .h-b-wrap{
+    height: auto;
+  }
   .main-box-3-left-box{
     margin: 0 0.5rem;
   }
@@ -496,15 +522,9 @@ select {
   .h-t-p{
     font-size: 1rem;
   }
-  .h-b-btn {
-    height: 2.5rem;
-    width: 7rem;
-    margin-left: .2rem;
-    font-size: 1rem;
-  }
-  .h-b-wrap {
-    height: 5rem;
-  }
+  
+  
+ 
   .h-t-btn {
     width: 6rem;
   }
@@ -550,12 +570,26 @@ select {
     margin: 10px 0;
   }
   
+ }
 
-
-
-
-
+ @media screen and (max-width:500px) {
+  .main-box-3-wrap {
+    height: 15rem;
+    width: 265px;
+    display: flex;
+    flex-flow: row wrap;
 }
+
+.footer-t-wrap-box-p-1{
+  font-size: 1.7rem;
+}
+
+
+
+ }
+
+
+
 @media screen and (max-width:390px) {
 .line{
   width: 22px;
