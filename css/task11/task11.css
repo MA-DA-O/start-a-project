@@ -47,8 +47,8 @@ main > .main-row > .icon-1 {
   background-image: url(../img/手机.png);
   background-repeat: no-repeat;
   height: 3vw;
-  margin-left: 10px;
-  margin-right: 8px;
+  margin-left: 2vw;
+  margin-right: 2vw;
   width: 2.5vw;
   background-size: 2.5vw 3vw;
 }
@@ -57,8 +57,8 @@ main > .main-row > .icon-2 {
   background-image: url(../img/锁头.png);
   background-repeat: no-repeat;
   height: 3vw;
-  margin-left: 10px;
-  margin-right: 8px;
+  margin-left: 2vw;
+  margin-right: 2vw;
   width: 2.5vw;
   background-size: 2.4vw 3vw;
 }
@@ -68,7 +68,7 @@ main > .main-row > input {
   height: 6vw;
   outline: medium;
   font-size: 3vw;
-  padding-left: 8px;
+  padding-left: 2vw;
   border: 0;
   border-left: 0.1rem solid #eff0f4;
 }

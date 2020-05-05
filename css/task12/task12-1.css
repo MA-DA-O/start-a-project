@@ -194,7 +194,7 @@ main .margin-lr-0 {
   background-color: #ffffff;
 }
 
-.foot > .buttom {
+.foot a > .buttom {
   height: 10vw;
   width: 40vw;
   background-color: white;
@@ -203,22 +203,16 @@ main .margin-lr-0 {
   outline: medium;
 }
 
-.foot > .btn-left {
+.foot a > .btn-left {
   margin-left: 4%;
-}
-
-.foot > .btn-left a {
   text-decoration: none;
   color: #5fc0cd;
   font-size: 3vw;
 }
 
-.foot > .btn-right {
+.foot a > .btn-right {
   margin-right: 4%;
   background-color: #5fc0cd;
-}
-
-.foot > .btn-right a {
   color: #ffffff;
   font-size: 3vw;
 }

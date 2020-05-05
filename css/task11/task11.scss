@@ -16,15 +16,15 @@ $gray: #eff0f4;
   height: 6vw;
   outline: medium;
   font-size: 3vw;
-  padding-left: 8px;
+  padding-left: 2vw;
   border: 0;
   border-left: 0.1rem solid $gray;
 }
 @mixin img-size {
   background-repeat: no-repeat;
   height: 3vw;
-  margin-left: 10px;
-  margin-right: 8px;
+  margin-left: 2vw;
+  margin-right: 2vw;
   width: 2.5vw;
 }
 @mixin center {

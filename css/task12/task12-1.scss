@@ -187,7 +187,7 @@ main {
   padding-bottom: 1.5rem;
   width: 100%;
   background-color: #ffffff;
-
+a {
   > .buttom {
     height: 10vw;
     width: 40vw;
@@ -199,17 +199,17 @@ main {
 
 > .btn-left {
   margin-left: 4%;
-  a {
+  
     text-decoration: none;
      color: #5fc0cd;
     font-size: $p-size-1;
   }
  
-}
+
 > .btn-right {
   margin-right: 4%;
   background-color: $blue;
-  a {
+ 
     color: $withe;
     font-size: $p-size-1;
   }

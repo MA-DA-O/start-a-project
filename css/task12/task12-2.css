@@ -270,14 +270,11 @@ body {
   flex-direction: column;
 }
 
-.f-wrap .f-left button {
+.f-wrap .f-left a button {
   border: 0;
   margin: 0;
   background-color: #f8fafb;
   outline: medium;
-}
-
-.f-wrap .f-left button a {
   font-size: 1.8vw;
   color: #5fc0cd;
   text-decoration: none;

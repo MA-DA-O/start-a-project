@@ -245,13 +245,14 @@ body {
   .f-left {
     @include center;
     flex-direction: column;
-    button {
+     a{
+       button {
       border: 0;
       margin: 0;
       
       background-color: #f8fafb;
       outline: medium;
-      a{@include font($font-size-2);
+     @include font($font-size-2);
       color: $blue;
        text-decoration: none;
       }
