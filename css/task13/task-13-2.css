@@ -49,11 +49,6 @@ img {
   margin-left: 4rem;
 }
 
-main {
-  display: flex;
-  flex-flow: wrap;
-}
-
 .main-box {
   width: 33vw;
   height: 33vw;
