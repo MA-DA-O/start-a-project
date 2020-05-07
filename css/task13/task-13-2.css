@@ -8,6 +8,11 @@ html {
   }
 }
 
+main {
+  overflow: scroll;
+  height: 71rem;
+}
+
 .bd-w {
   height: 2.2rem;
   border: 0.1rem solid #fff;
