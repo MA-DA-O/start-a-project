@@ -1,0 +1,99 @@
+html,body{
+    background-color: #fafafa;
+}
+ul,li{
+    list-style: none;
+}
+.border-left{
+    border-left: 2px dashed #dedede;
+}
+
+@media screen and (max-width:550px){
+   .icon-wrap-1 {
+    min-width: 100%;
+  } 
+  .border-left{
+      border-left: 0;
+  }
+}
+
+@media screen and (max-width:400px){
+    .border-left{
+        border-left: none;
+    }
+}
+
+.focus-container {
+    position: absolute;
+    z-index: 7;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.focus-container li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+    background: #fff;
+}
+
+.focus-item {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+
+    animation: fade linear infinite;
+}
+
+.focus-item2,
+.focus-item3 {
+    opacity: 0;
+}
+
+
+.focus-container ul {
+    margin-left: 46%;
+}
+
+/*设置轮播焦点的位置*/
+.focus-container {
+    bottom: 2%;
+}
+
+/*设置当前图片焦点的颜色*/
+.focus-item {
+    background: #29b078;
+}
+
+/*设置动画，请根据实际需要修改秒数*/
+
+.focus-item {
+    animation-duration: 6s;
+}
+
+.focus-item1 {
+    animation-delay:0s;
+}
+
+.focus-item2 {
+    animation-delay: 2s;
+}
+
+.focus-item3 {
+    animation-delay:4s;
+
+}
+/* 关于如何设置时间间隔 */
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    25%{opacity: 1;}
+    33%{opacity: 0;}
+    100%{
+        opacity: 0;
+    }
+}
