@@ -596,15 +596,7 @@ label {
 
 
 
-@media screen and (max-width: 1280px) {
-  .head-wrap {
-    min-width: 50%;
-  }
-  .col-md-50 {
-    min-width: 50%;
-    margin: 5rem 0;
-  }
-}
+
 @media screen and (max-width:1200px){
   .occupaition {
     min-width: 47%;
@@ -653,7 +645,7 @@ label {
 }
 @media screen and (max-width: 768px) {
   .col-md-100 {
-    min-width: 100%;
+    min-width: 100%!important;
   }
   // 外部高度根据内容自适应
   .nav-wrap {
@@ -687,7 +679,7 @@ label {
     margin: 3rem 0;
   }
   .head-wrap {
-    min-width: 100%;
+    min-width: 100%!important;
   }
   .occupaition {
     min-width: 100%;
