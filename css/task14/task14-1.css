@@ -5,13 +5,43 @@ html, body {
 
 ul, li {
   list-style: none;
+  padding: 0;
 }
 
 .border-left {
   border-left: 2px dashed #dedede;
 }
 
+.slideshow {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-box {
+  width: 300%;
+  animation: slideshow 6s ease-out infinite;
+}
+
+.img-box > img {
+  display: inline-block;
+  width: 33.33%;
+  float: left;
+}
+
+@media screen and (min-width: 1300px) {
+  .slideshow {
+    height: 60rem;
+  }
+  .img-box > img {
+    height: 60rem;
+  }
+}
+
 @media screen and (max-width: 1300px) {
+  .slideshow {
+    height: 40vw;
+  }
   .head-wrap {
     min-width: 50%;
   }
@@ -39,20 +69,35 @@ ul, li {
   }
 }
 
+@media screen and (max-width: 400px) and (max-width: 400px) {
+  .slideshow {
+    height: 80vw;
+  }
+  .slideshow .img-box {
+    height: 80vw;
+  }
+  .slideshow .img-box > img {
+    height: 80vw;
+  }
+}
+
 .focus-container {
+  display: flex;
+  justify-content: center;
   position: absolute;
   z-index: 7;
   margin: 0 auto;
-  left: 0;
-  right: 0;
+  left: 50%;
+  margin-left: -6rem;
+  width: 12rem;
 }
 
 .focus-container li {
-  width: 10px;
-  height: 10px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   float: left;
-  margin-right: 10px;
+  margin: 0 1rem;
   background: #fff;
 }
 
@@ -69,7 +114,8 @@ ul, li {
 }
 
 .focus-container ul {
-  margin-left: 46%;
+  display: flex;
+  justify-content: center;
 }
 
 /*设置轮播焦点的位置*/

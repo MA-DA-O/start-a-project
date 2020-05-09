@@ -169,6 +169,7 @@ $qh: #d0d6d9;
 .h-t-r {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 // 此为导航栏外框
 .nav-wrap {
@@ -212,26 +213,7 @@ label {
   line-height: 24px;
 }
 
-// 轮播图（详细设定版还没攻克
-// 此为展示框
-.slideshow {
-  width: 100%;
-  height: 60vw;
-  overflow: hidden;
-  position: relative;
-}
-// 此为图片盒子
-.img-box {
-  width: 300%;
-  animation: slideshow 6s ease-out infinite;
-  // 此为图片样式
-  > img {
-    display: inline-block;
-    width: 33.33%;
-    height: 60vw;
-    float: left;
-  }
-}
+
 // 此为轮播样式
 @keyframes slideshow {
   0%,
@@ -292,8 +274,8 @@ label {
 }
 // 圆形＋字体
 .roundness-box {
-  width: 7rem;
-  height: 7rem;
+  width: 6rem;
+  height: 6rem;
   background-color: white;
   border-radius: 50%;
   box-shadow: 0 0 3px $gray;
@@ -685,18 +667,11 @@ label {
     min-width: 100%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   
   .sponsor-wrap {
-    height: 17rem;
+    height: 30rem;
+    align-content: space-around;
   }
-  .slideshow {
-    height: 80vw;
-    .img-box {
-      height: 80vw;
-      > img {
-        height: 80vw;
-      }
-    }
-  }
+  
 }

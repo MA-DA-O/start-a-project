@@ -3,11 +3,44 @@ html,body{
 }
 ul,li{
     list-style: none;
+    padding: 0;
 }
 .border-left{
     border-left: 2px dashed #dedede;
 }
+// 轮播图 此为展示框
+.slideshow {
+    width: 100%;
+    
+    overflow: hidden;
+    position: relative;
+  }
+  // 此为图片盒子
+  .img-box {
+    width: 300%;
+    animation: slideshow 6s ease-out infinite;
+    // 此为图片样式
+    > img {
+      display: inline-block;
+      width: 33.33%;
+      
+      float: left;
+    }
+  }
+@media screen and (min-width: 1300px) {
+    .slideshow{
+       height: 60rem;
+    }
+    .img-box {
+        >img{
+            height: 60rem;
+        }
+    }
+}
 @media screen and (max-width: 1300px) {
+    .slideshow{
+        height: 40vw;
+    }
     .head-wrap {
       min-width: 50%;
     }
@@ -38,22 +71,37 @@ ul,li{
     .border-left{
         border-left: none;
     }
+    @media screen and (max-width: 400px) {
+  .slideshow {
+    height: 80vw;
+    .img-box {
+      height: 80vw;
+      > img {
+        height: 80vw;
+      }
+    }
+  }
+}
+
 }
 // 下为焦点
 .focus-container {
+    display: flex;
+    justify-content: center;
     position: absolute;
     z-index: 7;
     margin: 0 auto;
-    left: 0;
-    right: 0;
+    left: 50%;
+    margin-left: -6rem;
+    width: 12rem;
 }
 
 .focus-container li {
-    width: 10px;
-    height: 10px;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     float: left;
-    margin-right: 10px;
+    margin: 0 1rem;
     background: #fff;
 }
 
@@ -72,7 +120,8 @@ ul,li{
 
 
 .focus-container ul {
-    margin-left: 46%;
+    display: flex;
+    justify-content: center;
 }
 
 /*设置轮播焦点的位置*/
