@@ -81,7 +81,6 @@ html {
 
 .main-right {
   display: flex;
-  height: 90rem;
   flex-wrap: wrap;
   background-color: #fff;
   box-shadow: 0 0 5px #e6e6e6;
@@ -89,6 +88,10 @@ html {
   padding: 0;
   margin-left: 3rem;
   margin-bottom: 23rem;
+  max-width: 100%;
+  min-width: 65%;
+  flex-grow: 1;
+  flex-basis: 230px;
 }
 
 .m-r-t {

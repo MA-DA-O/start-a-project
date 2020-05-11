@@ -83,7 +83,6 @@ html {
 // 第三页右边
 .main-right {
   display: flex;
-  height: 90rem;
   flex-wrap: wrap;
   background-color: $white;
   box-shadow: 0 0 5px $snow;
@@ -91,6 +90,10 @@ html {
   padding: 0;
   margin-left: 3rem;
   margin-bottom: 23rem;
+  max-width: 100%;
+  min-width: 65%;
+  flex-grow: 1;
+  flex-basis: 230px;
 }
 // 右边上部分图片左浮动文字围绕
 .m-r-t {
