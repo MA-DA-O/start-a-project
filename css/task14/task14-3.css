@@ -80,6 +80,7 @@ html {
 }
 
 .main-right {
+  -webkit-flex-wrap: wrap;
   display: flex;
   flex-wrap: wrap;
   background-color: #fff;

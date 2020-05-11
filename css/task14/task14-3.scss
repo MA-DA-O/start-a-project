@@ -32,7 +32,7 @@ html {
 }
 // 第三页左边
 .main-left {
-  @include colunm;  
+  @include colunm;
   background-color: $white;
   height: 90rem;
   box-shadow: 0 0 5px $snow;
@@ -82,8 +82,9 @@ html {
 }
 // 第三页右边
 .main-right {
- 
- display: flex;
+  -webkit-flex-wrap: wrap;
+  display: flex;
+  
   flex-wrap: wrap;
   background-color: $white;
   box-shadow: 0 0 5px $snow;
@@ -100,9 +101,10 @@ html {
   border-bottom: 1px solid $snow;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  p {line-height: 3rem;
+  p {
+    line-height: 3rem;
     margin-left: 10px;
-    margin: 2.2rem 2rem 0 ;
+    margin: 2.2rem 2rem 0;
     margin-right: 20px;
     margin-top: 2.2rem;
     font-size: 1.4rem;
@@ -114,46 +116,44 @@ html {
   min-height: 600px;
   max-height: 1730px;
 }
-.m-r-b-p{
-    line-height: 3rem;
-    margin: 2.2rem 1.5rem;
-    font-size: 1.4rem;
-    color: #999999;
-    
+.m-r-b-p {
+  line-height: 3rem;
+  margin: 2.2rem 1.5rem;
+  font-size: 1.4rem;
+  color: #999999;
 }
-@media screen and (max-width:768px){
-    .main-box{
-       display: block;;
-    }
-    .main-left{
-        max-width: 100%!important;
-        height: auto;
-        margin-bottom: 5rem;
-    }
-    .main-left > .bottom{
-        flex-flow: row wrap;
-        justify-content: space-around;
-    }
-    .main-left > .bottom > .roundness-wrap{
-        margin: 3rem;
-    }
-    .main-right{
-        margin-left: 0;
-        margin-bottom: 5rem;
-    }
-    .m-r-t{
-     
-       flex-direction: column;
-        align-items: center;
-    }
+@media screen and (max-width: 768px) {
+  .main-box {
+    display: block;
+  }
+  .main-left {
+    max-width: 100% !important;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  .main-left > .bottom {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .main-left > .bottom > .roundness-wrap {
+    margin: 3rem;
+  }
+  .main-right {
+    margin-left: 0;
+    margin-bottom: 5rem;
+  }
+  .m-r-t {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .m-r-t p{
-        margin-bottom: 2rem;
-    }
-    .icon-10{
-        margin: 1.5rem 0;
-    }
-    .m-r-b-p{
-      margin: 2.2rem 1.5rem 0; 
-    }
+  .m-r-t p {
+    margin-bottom: 2rem;
+  }
+  .icon-10 {
+    margin: 1.5rem 0;
+  }
+  .m-r-b-p {
+    margin: 2.2rem 1.5rem 0;
+  }
 }
