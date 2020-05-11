@@ -94,6 +94,8 @@ html {
 }
 // 右边上部分图片左浮动文字围绕
 .m-r-t {
+  min-height: 177px;
+  max-height: 46rem;
   display: flex;
   border-bottom: 1px solid $snow;
   border-top-right-radius: 5px;
@@ -109,6 +111,8 @@ html {
 }
 // 右边下部分
 .m-r-b {
+  min-height: 600px;
+  max-height: 1730px;
 }
 .m-r-b-p{
     line-height: 3rem;
@@ -138,6 +142,7 @@ html {
         margin-bottom: 5rem;
     }
     .m-r-t{
+     
        flex-direction: column;
         align-items: center;
     }
