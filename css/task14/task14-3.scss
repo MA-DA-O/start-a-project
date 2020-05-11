@@ -82,9 +82,8 @@ html {
 }
 // 第三页右边
 .main-right {
-  -webkit-flex-wrap: wrap;
   display: flex;
-  
+  height: 90rem;
   flex-wrap: wrap;
   background-color: $white;
   box-shadow: 0 0 5px $snow;
@@ -95,6 +94,7 @@ html {
 }
 // 右边上部分图片左浮动文字围绕
 .m-r-t {
+  width: 100%;
   min-height: 177px;
   max-height: 46rem;
   display: flex;

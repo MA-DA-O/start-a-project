@@ -80,8 +80,8 @@ html {
 }
 
 .main-right {
-  -webkit-flex-wrap: wrap;
   display: flex;
+  height: 90rem;
   flex-wrap: wrap;
   background-color: #fff;
   box-shadow: 0 0 5px #e6e6e6;
@@ -92,6 +92,7 @@ html {
 }
 
 .m-r-t {
+  width: 100%;
   min-height: 177px;
   max-height: 46rem;
   display: flex;
