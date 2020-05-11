@@ -41,14 +41,21 @@ html {
 
     @extend %center-p;
     flex-flow: wrap;
+    
     .p2 {
       margin-left: 3.5rem;
       font-size: 1.4rem;
       color: black;
+      cursor: pointer;
+      width: 7rem;
+      text-align: center;
       &:hover {
         background-color: $green;
         color: $white;
       }
+    }
+    .p2-1{
+      width: 4rem;
     }
   }
 }
@@ -79,9 +86,14 @@ html {
     width: 0 !important;
   }
 }
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 720px) {
   .main-dirction{height: auto;}
   .main-dirction .direcsiton-p2-wrap .p2{
     margin: 1rem 0 1rem 2rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .main-dirction .direcsiton-p2-wrap .p2{
+    margin:1rem 0 1rem 1rem;
   }
 }

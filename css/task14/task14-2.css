@@ -38,11 +38,18 @@ html {
   margin-left: 3.5rem;
   font-size: 1.4rem;
   color: black;
+  cursor: pointer;
+  width: 7rem;
+  text-align: center;
 }
 
 .main-dirction .direcsiton-p2-wrap .p2:hover {
   background-color: #29b078;
   color: #fff;
+}
+
+.main-dirction .direcsiton-p2-wrap .p2-1 {
+  width: 4rem;
 }
 
 .exploit {
@@ -77,11 +84,17 @@ html {
   }
 }
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 720px) {
   .main-dirction {
     height: auto;
   }
   .main-dirction .direcsiton-p2-wrap .p2 {
     margin: 1rem 0 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .main-dirction .direcsiton-p2-wrap .p2 {
+    margin: 1rem 0 1rem 1rem;
   }
 }

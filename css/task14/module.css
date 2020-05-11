@@ -191,6 +191,7 @@
   color: #fff;
   background-color: #29b078;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 
 .nav-check {
