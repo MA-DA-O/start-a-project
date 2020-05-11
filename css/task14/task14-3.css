@@ -96,8 +96,6 @@ html {
 
 .m-r-t {
   width: 100%;
-  min-height: 177px;
-  max-height: 46rem;
   display: flex;
   border-bottom: 1px solid #e6e6e6;
   border-top-right-radius: 5px;
@@ -112,11 +110,6 @@ html {
   margin-top: 2.2rem;
   font-size: 1.4rem;
   color: #999999;
-}
-
-.m-r-b {
-  min-height: 600px;
-  max-height: 1730px;
 }
 
 .m-r-b-p {
