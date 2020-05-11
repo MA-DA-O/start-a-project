@@ -22,7 +22,6 @@ i {
   height: 24px;
   width: 25px;
   background-position: 0 -28px;
-  
 }
 
 /* .qq图标 */
@@ -37,7 +36,7 @@ i {
   height: 24px;
   width: 25px;
   background-position: 0 -76px;
-  margin: .5rem 1rem;
+  margin: 0.5rem 1rem;
 }
 
 /* .右箭头白底绿色 */
@@ -153,10 +152,9 @@ i {
   height: 177px;
   width: 230px;
   background-position: 0 -1575px;
- display: flex;
- flex-shrink: 0;
+  display: flex;
+  flex-shrink: 0;
   border-top-left-radius: 5px;
-  text-align: right;
 }
 
 /* .金山云 */
