@@ -153,7 +153,8 @@ i {
   height: 177px;
   width: 230px;
   background-position: 0 -1575px;
-  float: left;
+ display: flex;
+ flex-shrink: 0;
   border-top-left-radius: 5px;
   text-align: right;
 }

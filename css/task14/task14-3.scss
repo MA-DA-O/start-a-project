@@ -82,7 +82,9 @@ html {
 }
 // 第三页右边
 .main-right {
-  @include colunm;
+ 
+ display: flex;
+  flex-wrap: wrap;
   background-color: $white;
   box-shadow: 0 0 5px $snow;
   border-radius: 5px;
@@ -92,12 +94,13 @@ html {
 }
 // 右边上部分图片左浮动文字围绕
 .m-r-t {
+  display: flex;
   border-bottom: 1px solid $snow;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  p {
+  p {line-height: 3rem;
     margin-left: 10px;
-    line-height: 3rem;
+    margin: 2.2rem 2rem 0 ;
     margin-right: 20px;
     margin-top: 2.2rem;
     font-size: 1.4rem;
@@ -106,7 +109,6 @@ html {
 }
 // 右边下部分
 .m-r-b {
-  @include colunm;
 }
 .m-r-b-p{
     line-height: 3rem;
@@ -136,7 +138,7 @@ html {
         margin-bottom: 5rem;
     }
     .m-r-t{
-        @include colunm;
+       flex-direction: column;
         align-items: center;
     }
 
