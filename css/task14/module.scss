@@ -368,6 +368,8 @@ label {
   font-size: 1.4rem;
   color: $gray;
   border-bottom: 1px solid transparent;
+  display: flex;
+  flex-shrink: 0;
   &:hover {
     border-bottom: 1px solid $green;
   }
