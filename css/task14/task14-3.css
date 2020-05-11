@@ -121,7 +121,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .main-box {
-    flex-direction: column !important;
+    display: block;
   }
   .main-left {
     max-width: 100% !important;
