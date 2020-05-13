@@ -1,62 +1,50 @@
 function colorRandom() {
-    var a, b, c;
-    var a = parseInt(255 - Math.random() * 255).toString(16);
-    var b = parseInt(255 - Math.random() * 255).toString(16);
-    var c = parseInt(255 - Math.random() * 255).toString(16);
-    return  '#' + a + b + c;
-    
-}
+  var a, b, c;
+  var a = Math.round(Math.random() * 255);
+  var b = Math.round(Math.random() * 255);
+  var c = Math.round(Math.random() * 255);
+  return "rgb(" + a + "," + b + "," + c + ")";
+};
+// 获取随机颜色为rgb标准的256阶三原色组合而成，后面转为16进制输出字符串和#符号搭配组成颜色
 
-// 以下是获取三个随机数
-function sbox() {
-    // 建立一个方法
-    var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8]
-    // 设定数组序号
-    var newarr = []
-    // 设定空集放元素
-    for (var i = 0; i < 3; i++) {
-        // 这是取三个数
-        var randon = math.round(Math.random() * (arr.length - 1));
-        // 数学方法，四舍五入取整，获取数组中的随机元素之一
-        newarr.push(arr[randon]);
-        // 把获取的数组中的元素推到空组中
-        arr.splice(arr[randon]);
-        // 把获取数组从原数组删除
-        return newarr;
-        // 输出三个新的元素组合。
-    }
-}	
+var box = document.getElementsByClassName("littlebox");
+var btn1 = document.getElementsByClassName("btn1");
+var btn2 = document.getElementsByClassName("btn2");
+var time = null;
+// 获取按钮dom
+
+// 遍历盒子重置颜色
+function reset() {
+  for (var i = 0; i <= 8; i++) {
+    box[i].style.backgroundColor = "orange";
+  }
+};
+// 洗牌算法,声明数组，带入洗牌算法，抽取的牌和最后的交换。
+var n = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+function shuffle(n) {
+  var length = n.length;
+  for (var i = length - 1; i >= 0; i--) {
+    var ran = Math.floor(Math.random() * (i + 1));
+    var l = n[i];
+    n[i] = n[ran];
+    n[ran] = l;
+  }
+};
+
 // 按钮1点击事件重复
 btn1[0].onclick = function threebox() {
-    clearTimeout(time);
+  clearInterval(time);
+  time = setInterval(function time() {
+    shuffle(n);
     reset();
-    time = setTimeout(function time() {
-        var z = Math.floor(Math.random() * (8));
-        var x = Math.floor(Math.random() * (8));
-        var c = Math.floor(Math.random() * (8));
-        // 三个变量随机取一个盒子的数，若三者不同则变色，否则重新执行本函数方法。
-        if (z != x && z != c && x != c) {
-            box[z].style.backgroundColor = colorRandom()
-            box[x].style.backgroundColor = colorRandom()
-            box[c].style.backgroundColor = colorRandom()
-        }
-        // 改变盒子dom节点
-        time()
-    }
-
-
-
-    function Shuffle(a) {
-        var length = a.length;
-        for(var i = length - 1, rand;i >= 0; i--){
-            rand = Math.floor(Math.random()*(i+1))
-            var p = a[i];
-            a[i] = a[rand];
-            a[rand] = p ;  
-        }
-    }
-    //设置从0到8的数组a
-    a = [0,1,2,3,4,5,6,7,8];
-    //页面加载运行函数，Shuffle（a）
-    Shuffle(a);
-    //随机抽取颜色
+    box[n[8]].style.backgroundColor = colorRandom();
+    box[n[7]].style.backgroundColor = colorRandom();
+    box[n[6]].style.backgroundColor = colorRandom();
+  }, 700);
+  // 重复
+};
+// 问题：reset报错，
+btn2[0].onclick = function stop() {
+  reset();
+  clearInterval(time);
+};
