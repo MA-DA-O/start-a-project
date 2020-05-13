@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .show {
+            text-align: center;
+            display: inline-block;
+            font-size: 1.5rem;
+            width: 50vw;
+            border: 0;
+        }
+        
+        .show p {
+            color: #afbac0;
+            padding-left: 32px;
+            display: inline-block;
+            margin: 10px 0;
+
+        }
+
+        .show .hidded {
+            display: none;
+            width: 100%;
+            height: auto;
+            float: left;
+        }
+
+        .show:hover .hidded {
+            display: block;
+        }
+
+        .fixclear::after {
+            content: "";
+            clear: both;
+        }
+
+
+        .arrow
+
+        /*三角箭头*/
+            {
+            border: .1rem solid blue;
+            border-left: 0;
+            border-bottom: 0;
+            width: 0;
+            margin: 0;
+            padding: 5px;
+            transform: rotate(45deg);
+        }
+
+        .triangle
+
+        /*倒三角*/
+            {
+            margin-top: 18px;
+            display: inline-block;
+            border: 1rem solid #afbac0;
+            width: 0;
+            float: right;
+            height: 0;
+            border-color: gray transparent transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="arrow">
+
+    </div>
+    <div class=" triangle">
+
+    </div>
+
+    <label for="www">12212
+      <input type="checkbox">
+    </label>
+
+
+
+
+    <button class="show fixclear">
+        <p>食宿</p>
+        <div class="triangle"></div>
+        <div class="hidded">1</div>
+        <div class="hidded">1</div>
+        <div class="hidded">1</div>
+        <div class="hidded">1</div>
+    </button>
+    
+</body>
+
+</html>
