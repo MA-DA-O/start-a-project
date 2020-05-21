@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>获取下标demo</title>
+    <style>
+        button {
+            width: 200px;
+            height: 100px;
+            background: lawngreen;
+        }
+    </style>
+</head>
+
+<body>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+
+    <script>
+        // <!-- 获取按钮dom -->
+        var i = document.querySelectorAll('button')
+            // 遍历数组长度赋值给各个按钮，输出日志查看。
+        for (let o = 0; o < i.length; o++) {
+            i[o].onclick = function() {
+                console.log(o)
+            }
+
+        }
+    </script>
+</body>
+
+
+</html>
