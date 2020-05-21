@@ -14,7 +14,8 @@ button {
 main {
     width: 95%;
     margin: 2rem auto;
-    height: 70vh;
+    height: 72vh;
+    overflow: scroll;
 }
 
 span {
@@ -93,7 +94,6 @@ span {
 .m-b-b-right {
     width: 92%;
     height: 50vh;
-    padding-top: 4rem;
 }
 
 .row {
@@ -108,6 +108,11 @@ span {
     border: solid transparent;
     border-right-color: $darkblue;
     border-width: 1rem;
+}
+
+.record {
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 // 按钮
@@ -138,7 +143,7 @@ span {
 .hidden-box {
     display: none;
     position: absolute;
-    top: 15%;
+    top: 40%;
     left: 50%;
     margin-left: -40%;
     border-radius: 10px;
@@ -169,6 +174,9 @@ span {
 .hidden-btn-wrap {
     border-top: 1px solid #e6e6ee;
     display: flex;
+    background: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .hidden-btn-left {
@@ -204,4 +212,23 @@ span {
     justify-content: center;
 }
 
-.foot-btn-wrap {}
+.foot-btn-wrap {
+    width: 100%;
+    height: 15vh;
+    background: $darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.game-over {
+    width: 40%;
+    height: 7vh;
+    background: red;
+    border-radius: 10px;
+}
+
+.game-log {
+    @extend .game-over;
+    background: #ffa500;
+}

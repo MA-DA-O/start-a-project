@@ -33,6 +33,18 @@
 
     </main>
     <footer>
+        <!-- 全局黑色透明,因为透明会继承所以分开写 -->
+        <div class="hidden-all"></div>
+        <!-- 按钮,因全局透明导致不能写进去,分别隐藏 -->
+        <div class="hidden-box">
+            <div class="hidden-box-p-wrap">
+                <p class="hidden-box-p"></p>
+            </div>
+            <div class="hidden-btn-wrap">
+                <button class="hidden-btn-left">确定</button><button class="hidden-btn-right">好的</button>
+            </div>
+        </div>
+        <!-- 确定按钮 -->
         <div class="foot-btn-wrap">
             <button class="foot-btn">
                 <p class="foot-btn-p">

@@ -54,6 +54,7 @@ $(".foot-btn").click(function() {
         // 奇数自增变量
         q = q + 1;
         // console.log(q);
+
     }
     //   点击次数关联数组长度，转换为法官查看按钮，后面师兄提醒换为奇数自增的q关联。
     if (q == arr.length) {

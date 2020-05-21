@@ -15,23 +15,15 @@
 </head>
 
 <body>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-
+    <button>1212</button>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <script>
-        // <!-- 获取按钮dom -->
-        var i = document.querySelectorAll('button')
-            // 遍历数组长度赋值给各个按钮，输出日志查看。
-        for (let o = 0; o < i.length; o++) {
-            i[o].onclick = function() {
-                console.log(o)
-            }
+        var a = []
 
-        }
+        $('button').click(function() {
+            a.push(0)
+            console.log(a)
+        })
     </script>
 </body>
 
